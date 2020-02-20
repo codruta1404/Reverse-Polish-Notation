@@ -1,0 +1,14 @@
+Pasla Codruta-Stefania 325CD
+-eticheta “continue_to_read” imi asigura trecerea prin elementele din input.
+-eticheta “continue_to_compare” va compara fiecare caracter din input cu null, spatiu, 0, +, -, *, /
+-eticheta “obtain_your_number” imi scade din codul ascii al caracterului curent codul ascii al lui 0, astfel obtinandu-se numarul in baza 10.
+-eticheta “next_elem” va continua citirea elementelor din sirul dat ca input, astfel: daca dupa caracterul citit in “continue_to_read” este caracterul null => se va iesi din program, daca este spatiu => s-a gasit primul numar si il pun pe stiva, daca nu este indeplinit niciunul dintre cazurile anterioare => numarul e format din mai multe cifre si va trebui sa il obtin prin inmultirea cu 10 si adunarea valorii curente.
+- eticheta “minus_operation” imi verifica, in primul rand, daca ma incadrez in cazul de a face operatia efectiva sau de a citi un numar negativ. Cazul special este acela in care dupa minus nu am spatiu deoarece => ca am un numar negativ. Pentru cazul in care dupa minus am null sau spatiu => fac operatia de scadere.
+-eticheta  ”continue_minus_operation” imi asigura efectuarea scaderii.
+-eticheta “negative_numbers” imi va asigura trecerea la caracterul de dupa minus.Odata facuta trecerea numarul va fi negat => se obtine numarul negativ.
+-eticheta ”read_again” se va efectua in cazul in care am un numar cu mai multe cifre.De remarcat este faptul ca pentru a obtine numarul negativ de data aceasta scad din valoarea inmultita cu 10.
+-eticheta “add_operation” realizeaza operatia de adunare.(scoate fiecare element din stiva, il aduna in registrul eax si il pune din nou pe stiva)
+-eticheta “multiplication” efectueaza operatia de inmultire tinand cont de semne.
+-eticheta “division” elibereaza registrul edx, pune elementele pe stiva si efectueaza impartirea cu semn.
+-eticheta “push_stack”, asa cum ii este si numele, pune elementele pe stiva.
+-eticheta “exit_here” scoate rezultatul din stiva, il afiseaza si readuce stiva la starea initiala.
